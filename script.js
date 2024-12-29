@@ -37,4 +37,10 @@ function addBookToLibrary(title, author, pages, read){
     myLibrary.push(newBook)
 }
 
+
+
+
 addBookToLibrary("Treasure island", "Robert Louis Stevenson", 292, "not read");
+
+// write a function that loops through the array and displays each book on the page
+myLibrary.forEach(book => console.log(book.info()));
