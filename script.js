@@ -16,6 +16,8 @@ const theHobbit = new Book("The Hobbit", "J.R.R Tolkien", 295, "read");
 
 // Project Start
 
+//create an array to act as a Library
+
 const myLibrary = [];
 
 function Book(title, author, pages, read) {
@@ -28,6 +30,11 @@ function Book(title, author, pages, read) {
     }
 }
 
-function addBookToLibrary(){
+// Create a function to add new books to Library
 
+function addBookToLibrary(title, author, pages, read){
+    const newBook = new Book (title, author, pages, read)
+    myLibrary.push(newBook)
 }
+
+addBookToLibrary("Treasure island", "Robert Louis Stevenson", 292, "not read");
