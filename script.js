@@ -79,5 +79,30 @@ function addData() {
 
 // Create a displayBooks fucntion to loop through the myLibrary array and update the table dynamically
 function displayBooks(){
-    
+    // get the table body element
+    const resultTable = document.getElementById('result');
+
+    // clear existing rows
+    resultTable.innerText = '';
+
+    // loop through the library and create rows for each book
+    myLibrary.forEach((Book, index) => {
+        const row = document.createElement('tr');
+
+        const titleCell = document.createElement('td')
+        titleCell.textContent = book.title;
+        row.appendChild(titleCell);
+
+        const authorCell = document.createElement('td');
+        authorCell.textContent = book.author;
+        row.appendChild(authorCell);
+
+        const pagesCell = document.createElement('td');
+        pagesCell.textContent = book.pages;
+        row.appendChild(pagesCell);
+
+        const readCell = document.createElement('td');
+        readCell.textContent = read;
+        row.appendChild(readCell);
+    })
 }
