@@ -71,4 +71,8 @@ function addData() {
     document.getElementById('author').value = '';
     document.getElementById('pages').value = '';
     document.getElementById('read').value = '';
+
+    //display updated library in the table
+
+    displayBooks();
 }
