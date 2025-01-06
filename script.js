@@ -40,7 +40,7 @@ function addBookToLibrary(title, author, pages, read){
 
 
 
-addBookToLibrary("Treasure island", "Robert Louis Stevenson", 292, "not read");
+//addBookToLibrary("Treasure island", "Robert Louis Stevenson", 292, "not read");
 
 // write a function that loops through the array and displays each book on the page
 myLibrary.forEach(book => console.log(book.info()));
@@ -86,7 +86,7 @@ function displayBooks(){
     resultTable.innerText = '';
 
     // loop through the library and create rows for each book
-    myLibrary.forEach((Book, index) => {
+    myLibrary.forEach((book, index) => {
         const row = document.createElement('tr');
 
         const titleCell = document.createElement('td')
@@ -102,7 +102,7 @@ function displayBooks(){
         row.appendChild(pagesCell);
 
         const readCell = document.createElement('td');
-        readCell.textContent = read;
+        readCell.textContent = book.read;
         row.appendChild(readCell);
 
         // Optional: Add a delete button
