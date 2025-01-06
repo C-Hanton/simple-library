@@ -104,5 +104,18 @@ function displayBooks(){
         const readCell = document.createElement('td');
         readCell.textContent = read;
         row.appendChild(readCell);
+
+        // Optional: Add a delete button
+        const deleteCell = document.createElement('td');
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.onclick = () => {
+            myLibrary.splice(index, 1); // Remove book from library
+            displayBooks(); // Refresh table
+        };
+        deleteCell.appendChild(deleteButton);
+        row.appendChild(deleteCell);
+
+        resultTable.appendChild(row);
     })
 }
