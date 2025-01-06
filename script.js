@@ -48,8 +48,17 @@ myLibrary.forEach(book => console.log(book.info()));
 // Write a script to store information on the html form in the table
 
 function addData() {
+
+    // Get values from the form
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     const pages = document.getElementById('pages').value;
     const read = document.getElementById('read').value;
+
+    //validate entries from the form
+
+    if(!title | !author | !pages | !read){
+        alert("Please fill in all fields on the form");
+        return;
+    }
 }
