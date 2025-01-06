@@ -61,4 +61,10 @@ function addData() {
         alert("Please fill in all fields on the form");
         return;
     }
+
+    // create a new book object and add it to the library
+
+    addBookToLibrary(title, author, pages, read);
+
+    
 }
