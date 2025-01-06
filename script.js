@@ -76,3 +76,8 @@ function addData() {
 
     displayBooks();
 }
+
+// Create a displayBooks fucntion to loop through the myLibrary array and update the table dynamically
+function displayBooks(){
+    
+}
