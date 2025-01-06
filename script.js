@@ -44,3 +44,12 @@ addBookToLibrary("Treasure island", "Robert Louis Stevenson", 292, "not read");
 
 // write a function that loops through the array and displays each book on the page
 myLibrary.forEach(book => console.log(book.info()));
+
+// Write a script to store information on the html form in the table
+
+function addData() {
+    const title = document.getElementById('title').value;
+    const author = document.getElementById('author').value;
+    const pages = document.getElementById('pages').value;
+    const read = document.getElementById('read').value;
+}
