@@ -115,3 +115,17 @@ form h2 {
     background-color: #dc3545;
     color: white;
   }
+
+  /* Toggle Read button style */
+  button.toggle-read {
+    background-color: #28a745;
+    color: white;
+  }
+
+  button.toggle-read:hover {
+    background-color: #218838;
+  }
+
+  button.delete:hover {
+    background-color: #c82333;
+  }
