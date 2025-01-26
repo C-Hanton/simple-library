@@ -43,3 +43,16 @@ form h2 {
     border-color: #007bff;
     outline: none;
   }
+
+   /* Button styling */
+   form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  form button:hover {
+    background: #0056b3;
+  }
