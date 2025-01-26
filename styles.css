@@ -85,3 +85,33 @@ form h2 {
     text-align: left;
     color: #333;
   }
+
+  /* Add hover effect for rows */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Optional: Add alternate row colors */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  /* Buttons inside the table */
+  button {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Delete button style */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
