@@ -117,5 +117,21 @@ function displayBooks(){
         row.appendChild(deleteCell);
 
         resultTable.appendChild(row);
+
+        // Create button to change a books 'read' status
+        const toggleReadCell = document.createElement('td')
+        const toggleReadButton = document.createElement('button');
+        toggleReadButton.textContent = "Toggle Read";
+        toggleReadButton.onclick = () => {
+            //toggle read status of the book
+            book.read = book.read === 'read' ? 'not read' : 'read';
+            displayBooks();
+        }
+        toggleReadCell.appendChild(toggleReadButton);
+        row.appendChild(toggleReadCell);
     })
+
+    
+
 }
+
